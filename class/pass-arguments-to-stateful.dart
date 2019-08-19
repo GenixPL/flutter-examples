@@ -6,7 +6,7 @@ class EditSetPage extends StatefulWidget {
 	
 	final UserSet userSet;
 	
-	EditSetPage({Key key, @required this.userSet}) : super(key: key);
+	EditSetPage({Key key, @required this.userSet}) : super(key: key); // or EditSetPage(this.userSet);
 	
 	@override
 	_EditSetPageState createState() => _EditSetPageState(userSet);
