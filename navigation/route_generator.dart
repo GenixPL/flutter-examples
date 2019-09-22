@@ -57,10 +57,6 @@ class RouteGenerator with NavigatorObserver {
   void didRemove(Route route, Route previousRoute) {
     _routes.pop();
 
-    if (_routes.length == 0) {
-      _routes.push(homeRoute);
-    }
-
     Log.d(TAG, 'didRemove');
 
     super.didRemove(route, previousRoute);
