@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+// add to MaterialApp: navigatorObservers: [RouteGenerator.instance]
+// Navigator.pushNamedAndRemoveUntil should be used only with
+// homeRoute being pushed.
+
 class RouteGenerator with NavigatorObserver {
   RouteGenerator._privateConstructor();
   static final RouteGenerator instance = RouteGenerator._privateConstructor();
